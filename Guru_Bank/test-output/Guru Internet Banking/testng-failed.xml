@@ -5,13 +5,13 @@
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://demo.guru99.com/v4/index.php"/>
     <classes>
-      <class name="guruBankTestCases.TC_AddNewCustomer_003">
+      <class name="guruBankTestCases.TC_LoginExcl_002">
         <methods>
           <include name="tearDown"/>
-          <include name="addCustomer" invocation-numbers="0"/>
           <include name="setUpBrowser"/>
+          <include name="validateLogin"/>
         </methods>
-      </class> <!-- guruBankTestCases.TC_AddNewCustomer_003 -->
+      </class> <!-- guruBankTestCases.TC_LoginExcl_002 -->
     </classes>
   </test> <!-- Banking App Test(failed) -->
 </suite> <!-- Failed suite [Guru Internet Banking] -->

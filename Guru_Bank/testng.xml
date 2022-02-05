@@ -6,8 +6,8 @@
 		<parameter name="url" value="https://demo.guru99.com/v4/index.php"></parameter>
 		<classes>
 <!-- 			<class name="guruBankTestCases.TC_LoginDP_001" /> -->
-<!-- 			<class name ="guruBankTestCases.TC_LoginExcl_002"/> -->
-			<class name ="guruBankTestCases.TC_AddNewCustomer_003"/>
+			<class name ="guruBankTestCases.TC_LoginExcl_002"/>
+<!-- 			<class name ="guruBankTestCases.TC_AddNewCustomer_003"/> -->
 		</classes>
 	</test> <!-- Banking App Test -->
 </suite> <!-- Guru Internet Banking -->

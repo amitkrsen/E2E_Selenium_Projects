@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Guru_Internet_Banking" class="navigator-link ">
-                    <span>C:\Users\AmitSen\eclipse-workspace\Guru_Bank\testng.xml</span>
+                    <span>C:\Users\AmitSen\git\E2E_Selenium_Projects\Guru_Bank\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Guru_Internet_Banking">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Guru_Internet_Banking" title="guruBankTestCases.TC_AddNewCustomer_003" class="method navigator-link" hash-for-method="addCustomer(mngr379628, dEqajat)">addCustomer(mngr379628, dEqajat)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Guru_Internet_Banking" title="guruBankTestCases.TC_LoginExcl_002" class="method navigator-link" hash-for-method="validateLogin">validateLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Guru_Internet_Banking -->
@@ -122,36 +122,40 @@
           <div class="suite-Guru_Internet_Banking-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">guruBankTestCases.TC_AddNewCustomer_003</span>
+              <span class="class-name">guruBankTestCases.TC_LoginExcl_002</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addCustomer(mngr379628, dEqajat)">
-                  </a> <!-- addCustomer(mngr379628, dEqajat) -->
-                  <span class="method-name">addCustomer</span>
-                  <span class="parameters">(mngr379628, dEqajat)</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;Logout.php&quot;&gt;...&lt;/a&gt; is not clickable at point (120, 594). Other element would receive the click: &lt;p align=&quot;right&quot;&gt;...&lt;/p&gt;
-  (Session info: chrome=97.0.4692.99)
+                  <a name="validateLogin">
+                  </a> <!-- validateLogin -->
+                  <span class="method-name">validateLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),&apos;Log out&apos;)]&quot;}
+  (Session info: chrome=98.0.4758.82)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AMITSEN-PC&apos;, ip: &apos;192.168.0.106&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.99, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\AmitSen\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54758}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 01326950f50b7eac7a6d7c2a3b7281da
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.82, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\AmitSen\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54630}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ff3836c3db471e10f3f2cf913ca5fb1f
+*** Element info: {Using=xpath, value=//a[contains(text(),&apos;Log out&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
 	at guruBank_POM.loginPage.clickLogout(loginPage.java:48)
-	at guruBankTestCases.TC_AddNewCustomer_003.addCustomer(TC_AddNewCustomer_003.java:64)
+	at guruBankTestCases.TC_LoginExcl_002.validateLogin(TC_LoginExcl_002.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -160,7 +164,7 @@ Session ID: 01326950f50b7eac7a6d7c2a3b7281da
         </div> <!-- panel Guru_Internet_Banking -->
         <div panel-name="test-xml-Guru_Internet_Banking" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\AmitSen\eclipse-workspace\Guru_Bank\testng.xml</span>
+            <span class="header-content">C:\Users\AmitSen\git\E2E_Selenium_Projects\Guru_Bank\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -171,7 +175,7 @@ Session ID: 01326950f50b7eac7a6d7c2a3b7281da
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://demo.guru99.com/v4/index.php&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;guruBankTestCases.TC_AddNewCustomer_003&quot;/&gt;
+      &lt;class name=&quot;guruBankTestCases.TC_LoginExcl_002&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Banking App Test --&gt;
 &lt;/suite&gt; &lt;!-- Guru Internet Banking --&gt;
@@ -213,14 +217,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'addCustomer')
-data.setCell(0, 2, 'guruBankTestCases.TC_AddNewCustomer_003')
-data.setCell(0, 3, 9884);
+data.setCell(0, 1, 'validateLogin')
+data.setCell(0, 2, 'guruBankTestCases.TC_LoginExcl_002')
+data.setCell(0, 3, 10897);
 window.suiteTableData['Guru_Internet_Banking']= { tableData: data, tableDiv: 'times-div-Guru_Internet_Banking'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Guru_Internet_Banking">
               </div> <!-- times-div-Guru_Internet_Banking -->
             </div> <!-- times-div -->
@@ -246,7 +250,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">guruBankTestCases.TC_AddNewCustomer_003</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">guruBankTestCases.TC_LoginExcl_002</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpBrowser(chrome, https://demo.guru99.com/v4/index.php)</span>
                 <span class="method-start">0 ms</span>
@@ -254,12 +258,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">addCustomer(mngr379628, dEqajat)</span>
-                <span class="method-start">6139 ms</span>
+                <span class="method-name">validateLogin</span>
+                <span class="method-start">6698 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16029 ms</span>
+                <span class="method-start">17600 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

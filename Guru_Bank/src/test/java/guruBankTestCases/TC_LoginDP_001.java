@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.google.common.base.Verify;
+
 import guruBank_POM.loginPage;
 import utilities.baseClass;
 
@@ -47,6 +49,6 @@ public class TC_LoginDP_001 extends baseClass{
 	@DataProvider(name = "GetLoginData")
 	public Object[][] loginData() {
 
-		return new Object[][] {{"mngr379628","dEqajat"}};
+		return new Object[][] {{"mngr384654","dypYhev"}};
 	}
 }

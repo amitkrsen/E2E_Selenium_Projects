@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import guruBank_POM.loginPage;
 import utilities.baseClass;
@@ -51,6 +52,7 @@ public class TC_LoginExcl_002 extends baseClass {
 			FileOutputStream fos = new FileOutputStream(src);
 			String pass = "Passed - Valid Login";
 			String fail = "Failed - Invalid Login";
+			SoftAssert softAssert = new SoftAssert();
 
 			try
 			{
@@ -58,6 +60,7 @@ public class TC_LoginExcl_002 extends baseClass {
 				String actualTitle = (driver.getTitle());
 				String expectedTitle = "Guru99 Bank Manager HomePage";
 				Assert.assertEquals(actualTitle, expectedTitle);
+//				softAssert.assertEquals(actualTitle, expectedTitle);
 				System.out.println("Login Test with Excel Input passed...");
 			}
 			catch (Exception e)
@@ -67,6 +70,7 @@ public class TC_LoginExcl_002 extends baseClass {
 				System.out.println("Login Test with Excel Input failed...");
 				screenCapture(driver, "LoginTestFailed");
 			}
+			
 
 			lp.clickLogout();
 			sheet.getRow(i).createCell(2).setCellValue(pass);

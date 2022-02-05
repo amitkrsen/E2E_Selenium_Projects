@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Regression_Gmail]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.gmail.com"/>
+  <test thread-count="5" name="GmailValidation(failed)">
+    <parameter name="pass" value="amitsen1234"/>
+    <parameter name="email" value="amitksen.edu"/>
+    <classes>
+      <class name="testCode_Mod8.gmailValidation">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="b_validateSendMail"/>
+          <include name="beforeSuite"/>
+          <include name="a_validateLogin"/>
+        </methods>
+      </class> <!-- testCode_Mod8.gmailValidation -->
+    </classes>
+  </test> <!-- GmailValidation(failed) -->
+</suite> <!-- Failed suite [Regression_Gmail] -->

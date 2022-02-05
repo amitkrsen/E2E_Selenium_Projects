@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-03-04T10:45:34 IST" name="Regression_Gmail" finished-at="2020-03-04T10:46:01 IST" duration-ms="26430">
+    <groups>
+    </groups>
+    <test started-at="2020-03-04T10:45:34 IST" name="GmailValidation" finished-at="2020-03-04T10:46:01 IST" duration-ms="26430">
+      <class name="testCode_Mod8.gmailValidation">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String, java.lang.String)[pri:0, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:45:30 IST" name="beforeSuite" finished-at="2020-03-04T10:45:34 IST" duration-ms="4396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:45:34 IST" name="beforeClass" finished-at="2020-03-04T10:45:34 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="a_validateLogin(java.lang.String, java.lang.String)[pri:1, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:45:34 IST" name="a_validateLogin" description="TC_001 - This is to validate login" finished-at="2020-03-04T10:45:46 IST" duration-ms="11697" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amitksen.edu]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[amitsen1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_validateLogin -->
+        <test-method signature="b_validateSendMail()[pri:0, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:45:46 IST" name="b_validateSendMail" description="TC_002 - This is to validate compse and send mail" finished-at="2020-03-04T10:45:58 IST" depends-on-methods="testCode_Mod8.gmailValidation.a_validateLogin" duration-ms="11492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_validateSendMail -->
+        <test-method signature="c_validateLogout()[pri:0, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:45:58 IST" name="c_validateLogout" description="TC_003 - This is to validate logout" finished-at="2020-03-04T10:46:00 IST" depends-on-methods="testCode_Mod8.gmailValidation.b_validateSendMail" duration-ms="2522" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_validateLogout -->
+        <test-method signature="d_browserClose()[pri:0, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:46:00 IST" name="d_browserClose" description="TC_004 - Close browser" finished-at="2020-03-04T10:46:01 IST" depends-on-methods="testCode_Mod8.gmailValidation.c_validateLogout" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_browserClose -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testCode_Mod8.gmailValidation@23529fee]" started-at="2020-03-04T10:46:01 IST" name="afterSuite" finished-at="2020-03-04T10:46:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- testCode_Mod8.gmailValidation -->
+    </test> <!-- GmailValidation -->
+  </suite> <!-- Regression_Gmail -->
+</testng-results>

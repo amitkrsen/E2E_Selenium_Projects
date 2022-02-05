@@ -70,7 +70,6 @@ public class TC_LoginExcl_002 extends baseClass {
 				System.out.println("Login Test with Excel Input failed...");
 				screenCapture(driver, "LoginTestFailed");
 			}
-			
 
 			lp.clickLogout();
 			sheet.getRow(i).createCell(2).setCellValue(pass);

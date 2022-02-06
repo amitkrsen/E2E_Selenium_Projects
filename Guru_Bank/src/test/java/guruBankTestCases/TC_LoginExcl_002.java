@@ -52,7 +52,7 @@ public class TC_LoginExcl_002 extends baseClass {
 			FileOutputStream fos = new FileOutputStream(src);
 			String pass = "Passed - Valid Login";
 			String fail = "Failed - Invalid Login";
-			SoftAssert softAssert = new SoftAssert();
+//			SoftAssert softAssert = new SoftAssert();
 
 			try
 			{
